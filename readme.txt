@@ -10,9 +10,9 @@ little wp to twitter, a portable tool that post a tweet to your twitter when you
 
 == Description ==
 
-*ÕâÊÇÒ»¸öÇá±ãµÄ£¬¼´Ê±Í¬²½WordPress¸üĞÂĞÅÏ¢µ½twitterµÄ¹¤¾ß£¬Ò²Ö§³ÖĞÂÀËÎ¢²©¡£
-*¿ÉÒÔ×Ô¶¨Òå¸üĞÂĞÅÏ¢µÄÇ°×º£¬Ö§³Ö½«ÎÄÕÂ±êÇ©×ªÎª»°ÌâĞÎÊ½·¢ÍÆ¡£
-*ÈÕÖ¾±à¼­Ò³Ãæ¿É×ÔĞĞ¿ØÖÆµ¥ÆªÈÕÖ¾ÊÇ·ñÍÆµ½twitter¡£
+*è¿™æ˜¯ä¸€ä¸ªè½»ä¾¿çš„ï¼Œå³æ—¶åŒæ­¥WordPressæ›´æ–°ä¿¡æ¯åˆ°twitterçš„å·¥å…·ï¼Œä¹Ÿæ”¯æŒæ–°æµªå¾®åšã€‚
+*å¯ä»¥è‡ªå®šä¹‰æ›´æ–°ä¿¡æ¯çš„å‰ç¼€ï¼Œæ”¯æŒå°†æ–‡ç« æ ‡ç­¾è½¬ä¸ºè¯é¢˜å½¢å¼å‘æ¨ã€‚
+*æ—¥å¿—ç¼–è¾‘é¡µé¢å¯è‡ªè¡Œæ§åˆ¶å•ç¯‡æ—¥å¿—æ˜¯å¦æ¨åˆ°twitterã€‚
 
 == Installation ==
 
@@ -21,7 +21,7 @@ little wp to twitter, a portable tool that post a tweet to your twitter when you
 3. Go to the Plugins page in your WordPress Administration area and click 'Activate' for Twitter Tools.
 4. Go to the Twitter Tools Options page (Settings > Little wp to twitter) to set your Twitter account information and preferences.
 
-ÏÂÔØ²å¼ş£¬ÉÏ´«µ½²å¼şÄ¿Â¼£¬ÔÚºóÌ¨¹ÜÀíÖĞ¼¤»î²å¼ş£¬µ½ÉèÖÃÒ³ÃæÌîÈëtwitterÕËºÅÃÜÂë¡£
+ä¸‹è½½æ’ä»¶ï¼Œä¸Šä¼ åˆ°æ’ä»¶ç›®å½•ï¼Œåœ¨åå°ç®¡ç†ä¸­æ¿€æ´»æ’ä»¶ï¼Œåˆ°è®¾ç½®é¡µé¢å¡«å…¥twitterè´¦å·å¯†ç ã€‚
 
 == Changelog ==
 = 1.0 =
