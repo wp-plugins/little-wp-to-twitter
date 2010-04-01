@@ -10,6 +10,9 @@ little wp to twitter, a portable tool that post a tweet to your twitter when you
 
 == Description ==
 
+*little wp to twitter, a portable tool that post a tweet to your twitter when you have a new post or update a early post.
+*You can customize the prefix update information.
+*Edit page log free to control whether single article log onto twitter.
 *这是一个轻便的，即时同步WordPress更新信息到twitter的工具，也支持新浪微博。
 *可以自定义更新信息的前缀，支持将文章标签转为话题形式发推。
 *日志编辑页面可自行控制单篇日志是否推到twitter。
