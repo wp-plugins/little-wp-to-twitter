@@ -30,4 +30,5 @@ little wp to twitter, a portable tool that post a tweet to your twitter when you
 2010/04/01
 none
 = 1.1 =
-change the default url-shorten Service.
+change the default url-shorten Service and twitter api proxy.
+更换了个稳定的短网址缩短服务，更换了一个失效的twitter api代理。
