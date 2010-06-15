@@ -247,7 +247,7 @@ function lwtt_wp_to_twitter($message)
 		$password = get_option('lwtt_password');
 		$url = 'http://twitter.com/statuses/update.xml';
 		if (get_option('lwtt_proxy')) {
-			$url = 'http://nest.onedd.net/api/statuses/update.xml';
+			$url = 'http://mycnpda.appspot.com/api/statuses/update.xml';
 		}
 		if (get_option('lwtt_proxy') && get_option('lwtt_custom_proxy')) {
 			$url = get_option('lwtt_custom_proxy');
