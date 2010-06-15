@@ -171,7 +171,7 @@ function lwtt_get_update_post_info($id)
 		$url_contents = $shortlink;
 		if ($shortlink=="") 
 		{
-			$shortapi = "http://u.boy.im/api.php?url=";
+			$shortapi = "http://ye.pe/api.php?format=simple&action=shorturl&url=";
 			if (get_option('lwtt_api')) {
 				$shortapi = get_option('lwtt_api');
 			}
@@ -227,7 +227,7 @@ function lwtt_get_update_post_info($id)
 			$message .= " ".$tag[$ok];
 		}
 		
-		if($_POST['lwtt_to_twitter_custom'] !== "")
+		if($_POST['lwtt_to_twitter_custom'] != "")
 		{
 			$message .= " - " . $_POST['lwtt_to_twitter_custom'];
 			$message_sina .= " - " . $_POST['lwtt_to_twitter_custom'];
