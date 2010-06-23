@@ -18,19 +18,31 @@ if(get_option("enable_lwtt")){
 }
 
 function lwtt_add_options() {
-	add_options_page('little-wp-to-twitter options', 'little-wp-to-twitter', 8, __FILE__, 'lwtt_the_options');
+	add_options_page('little-wp-to-twitter options', __("little-wp-to-twitter","little-wp-to-twitter"), 8, __FILE__, 'lwtt_the_options');
 }
 
 function lwtt_warning() {
-	echo "<div class=\"error\"><p>Please update your <a href=\"".get_bloginfo('wpurl')."/wp-admin/options-general.php?page=little-wp-to-twitter/func/function.php\">little-wp-to-twitter username and password</a>.</p></div>";
+	echo "<div class=\"error\"><p>";
+	echo _e("Please update your ","little-wp-to-twitter");
+	echo "<a href=\"".get_bloginfo('wpurl')."/wp-admin/options-general.php?page=little-wp-to-twitter/func/function.php\">";
+	echo _e("little-wp-to-twitter username and password","little-wp-to-twitter");
+	echo "</a>.</p></div>";
 }
 
 function lwtt_enable_warning() {
-	echo "<div class=\"error\"><p>Please go to <a href=\"".get_bloginfo('wpurl')."/wp-admin/options-general.php?page=little-wp-to-twitter/func/function.php\">little-wp-to-twitter</a> to enable the options.</p></div>";
+	echo "<div class=\"error\"><p>";
+	echo _e('Please go to ','little-wp-to-twitter');
+	echo "<a href=\"".get_bloginfo('wpurl')."/wp-admin/options-general.php?page=little-wp-to-twitter/func/function.php\">";
+	echo _e('little-wp-to-twitter','little-wp-to-twitter');
+	echo "</a>";
+	echo _e(' to enable the options.','little-wp-to-twitter');
+	echo "</p></div>";
 }
 
 function lwtt_warning_sina() {
-	echo "<div class=\"error\"><p>Please enter your sina username and password.</p></div>";
+	echo "<div class=\"error\"><p>";
+	echo _e('Please enter your sina username and password.','little-wp-to-twitter');
+	echo "</p></div>";
 }
 
 function lwtt_save_postmeta($id) {
@@ -68,14 +80,16 @@ function lwtt_show_post_option() {
 
 	echo "<div class=\"postbox\">";
 	echo "<h3 class=\"hndle\"><span>Little-wp-to-twitter</span></h3>";
-	echo "<div class=\"inside\">Tweet this post to Twitter? ";
-
+	echo "<div class=\"inside\">";
+	echo _e("Tweet this post to Twitter?","little-wp-to-twitter");
 	echo "<input id=\"skip_tb_post\" type=\"radio\" name=\"lwtt_to_twitter\" value=\"yes\"";
 	if($notify == "yes" || $notify == "")
 	{
 		echo " checked=\"checked\"";
 	}
-	echo " /> <label for=\"skip_tb_post\">Yes</label> ";
+	echo " /> <label for=\"skip_tb_post\">";
+	echo _e('Yes','little-wp-to-twitter');
+	echo "</label> ";
 
 
 	echo "<input id=\"lwtt_to_twitter\" type=\"radio\" name=\"lwtt_to_twitter\" value=\"no\"";
@@ -85,13 +99,15 @@ function lwtt_show_post_option() {
 		echo " checked=\"checked\"";
 	}
 
-	echo " /> <label for=\"lwtt_to_twitter\">No</label>";
+	echo " /> <label for=\"lwtt_to_twitter\">";
+	echo _e('No','little-wp-to-twitter');
+	echo "</label>";
 
 	echo "</div>";
 	
 	$lwtttext = get_post_meta($post->ID, '_lwtt_text', true);
-	echo "<div class=\"inside\">You can add this after the tweet. ";
-
+	echo "<div class=\"inside\">";
+	echo _e('You can add this after the tweet.','little-wp-to-twitter');
 	echo "<input size=\"80%\" type=\"text\" name=\"lwtt_to_twitter_custom\" value=\"";
 	echo $lwtttext."\"";
 	echo " /> ";
@@ -151,7 +167,7 @@ function lwtt_get_update_post_info($id)
 		
 		if($_POST['original_post_status'] == 'publish')
 		{
-			$leavetime = 60*60*24;
+			$leavetime = 60*60*1;
 			if (get_option('lwtt_time')) {
 				$leavetime = intval(get_option('lwtt_time'));
 			}
@@ -258,7 +274,7 @@ function lwtt_wp_to_twitter($message)
 		curl_setopt($curl_handle, CURLOPT_CONNECTTIMEOUT, 2);
 		curl_setopt($curl_handle, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($curl_handle, CURLOPT_POST, 1);
-		curl_setopt($curl_handle, CURLOPT_POSTFIELDS, "status=$message&source=qiqiboy.com");
+		curl_setopt($curl_handle, CURLOPT_POSTFIELDS, "status=$message&source=qiqiboy");
 		curl_setopt($curl_handle, CURLOPT_USERPWD, "$username:$password");
 		$buffer = curl_exec($curl_handle);
 		curl_close($curl_handle);
