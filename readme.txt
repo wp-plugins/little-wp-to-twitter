@@ -3,8 +3,8 @@ Contributors: QiQiBoY
 Author Homepage: http://www.qiqiboy.com
 Tags: wordpress, twitter, post, sina, sync
 Requires at least: 2.7
-Tested up to: 2.9.2
-Stable tag: 1.1
+Tested up to: 3.0.0
+Stable tag: 1.2
 
 little wp to twitter, a portable tool that post a tweet to your twitter when you have a new post or update a early post.
 
@@ -33,3 +33,7 @@ none
 = 1.1 =
 change the default url-shorten Service and twitter api proxy.
 更换了个稳定的短网址缩短服务，更换了一个失效的twitter api代理。
+= 1.2 =
+添加中文语言包
+若干问题修正
+add zh_CN.mo
