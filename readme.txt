@@ -21,10 +21,10 @@ little wp to twitter, a portable tool that post a tweet to your twitter when you
 
 1. Download the plugin archive and expand it (you've likely already done this).
 2. Put the 'little-wp-to-twitter' directory into your wp-content/plugins/ directory.
-3. Go to the Plugins page in your WordPress Administration area and click 'Activate' for Twitter Tools.
-4. Go to the Twitter Tools Options page (Settings > Little wp to twitter) to set your Twitter account information and preferences.
+3. Go to the Plugins page in your WordPress Administration area and click 'Activate' for little-wp-to-twitter.
+4. Go to the little-wp-to-twitter Options page (Settings > Little wp to twitter) to set your Twitter account information and preferences.
 
-下载插件，上传到插件目录，在后台管理中激活插件，到设置页面填入twitter账号密码。
+下载插件，上传到插件目录，在后台管理中激活插件，到设置页面勾选“启用”并填入twitter账号密码。
 
 == Changelog ==
 = 1.0 =
