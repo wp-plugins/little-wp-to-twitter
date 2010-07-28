@@ -8,14 +8,12 @@ if((get_option('lwtt_username') == "" || get_option('lwtt_password') == "") && g
 if((get_option('lwtt_username_sina') == "" || get_option('lwtt_password_sina') == "") && get_option("lwtt_sina")) {
 	add_action('admin_notices', 'lwtt_warning_sina');
 }
-if(get_option("enable_lwtt")){
+
 	add_action('publish_post', 'lwtt_get_update_post_info');
 	add_action('edit_form_advanced', 'lwtt_show_post_option');
 	add_action('save_post', 'lwtt_save_postmeta');
 	add_action('save_post', 'lwtt_save_customtext');
-} else {
-	add_action('admin_notices', 'lwtt_enable_warning');
-}
+
 
 function lwtt_add_options() {
 	add_options_page('little-wp-to-twitter options', __("little-wp-to-twitter","little-wp-to-twitter"), 8, __FILE__, 'lwtt_the_options');
@@ -198,7 +196,7 @@ function lwtt_get_update_post_info($id)
 
 		if($temp_length > 137)
 		{
-			$remaining_chars = 134 - str_len($url_contents);
+			$remaining_chars = 134 - lwtt_str_len($url_contents);
 			$title = lwtt_cut_str($title, 0, $remaining_chars);
 			$title = $title . "...";
 		}
@@ -248,9 +246,9 @@ function lwtt_get_update_post_info($id)
 			$message .= " - " . $_POST['lwtt_to_twitter_custom'];
 			$message_sina .= " - " . $_POST['lwtt_to_twitter_custom'];
 		}
-		
-		lwtt_wp_to_twitter($message);
-		
+		if (get_option('lwtt_username') !== "" && get_option('lwtt_password') !== "" && get_option("enable_lwtt")) {
+			lwtt_wp_to_twitter($message);
+		}
 		if (get_option("lwtt_sina") && (get_option('lwtt_username_sina') !== "") && (get_option('lwtt_password_sina') !== "")) {
 			lwtt_wp_to_sina($message_sina);
 		}
