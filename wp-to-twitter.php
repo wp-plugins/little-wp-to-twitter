@@ -3,7 +3,7 @@
 Plugin Name: little-wp-to-twitter
 Plugin URI: http://www.qiqiboy.com/plugins/
 Description: When you update your wp post, a new tweet will be update to your twitter at the same time. 
-Version: 1.2.2
+Version: 1.2.3
 Author: QiQiBoY
 Author URI: http://www.qiqiboy.com
 */
