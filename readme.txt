@@ -4,6 +4,7 @@ Author Homepage: http://www.qiqiboy.com
 Tags: wordpress, twitter, post, sina, sync
 Requires at least: 2.7
 Tested up to: 3.0.0
+Stable tag: 1.2.3
 
 little wp to twitter, a portable tool that post a tweet to your twitter when you have a new post or update a early post.
 
