@@ -39,3 +39,5 @@ change the default url-shorten Service and twitter api proxy.
 add zh_CN.mo
 = 1.2.1 =
 修正截断函数错误问题
+= 1.2.2 =
+修正消息编码问题
