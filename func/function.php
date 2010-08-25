@@ -247,10 +247,10 @@ function lwtt_get_update_post_info($id)
 			$message_sina .= " - " . $_POST['lwtt_to_twitter_custom'];
 		}
 		if (get_option('lwtt_username') !== "" && get_option('lwtt_password') !== "" && get_option("enable_lwtt")) {
-			lwtt_wp_to_twitter($message);
+			lwtt_wp_to_twitter(htmlspecialchars($message));
 		}
 		if (get_option("lwtt_sina") && (get_option('lwtt_username_sina') !== "") && (get_option('lwtt_password_sina') !== "")) {
-			lwtt_wp_to_sina($message_sina);
+			lwtt_wp_to_sina(htmlspecialchars($message));
 		}
 	}
 }
