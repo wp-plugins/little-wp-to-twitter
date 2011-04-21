@@ -3,7 +3,7 @@
 Plugin Name: little-wp-to-twitter
 Plugin URI: http://www.qiqiboy.com/plugins/
 Description: When you update your wp post, a new tweet will be update to your twitter at the same time. 
-Version: 1.2.3
+Version: 1.2.4
 Author: QiQiBoY
 Author URI: http://www.qiqiboy.com
 */
@@ -14,7 +14,7 @@ function lwtt_the_options() {
 <div class="wrap">
 <h2><?php _e('Little-wp-to-twitter Options','little-wp-to-twitter');?></h2>
 <form method="post" action="options.php">
-
+<h3>This plugin has not worked. Please go to <a href="http://wordpress.org/extend/plugins/social-medias-connect/">Social Medias Connect</a> page to download the newest plugin.</h3>
 <?php wp_nonce_field('update-options'); ?>
 <h3><?php _e('Enable little wp to twitter?','little-wp-to-twitter');?></h3>
 <label>
